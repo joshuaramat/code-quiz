@@ -9,3 +9,4 @@ a timed quiz on JavaScript fundamentals that stores high scores to gauge your pr
 * CSS
 
 ## Website
+https://joshuaramat.github.io/code-quiz/

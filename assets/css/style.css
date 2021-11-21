@@ -1,0 +1,88 @@
+.btn {
+    color: white;
+    font-weight: bolder;
+}
+
+.title {
+    margin-bottom: 5vh;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #1c2e4a;
+    color: white;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+    color: #FFCD91;
+}
+
+.btn {
+    background-color: #FFCD91;
+    transition: all .5s ease-out;
+    background-size: 1px 100px;
+    background-position: 0 -10px;
+}
+
+.btn:hover {
+    background-position: 1px -50px;
+    color: #1c2e4a;
+}
+
+#wrong-answer {
+    margin-top: 2vh;
+    border-top: solid 2px lightgray;
+}
+
+.answers-button {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#highScores {
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+}
+
+.correct-wrong {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    z-index: -2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+    a {
+        font-size: 1.1rem;
+    }
+    #highScoreList {
+        width: 100%;
+    }
+}

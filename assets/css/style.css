@@ -52,8 +52,9 @@ a {
 .btn {
     background-color: var(--secondary);
     transition: all .5s ease-out;
-    background-size: 1px 100px;
+    background-size: 1px 200px;
     background-position: 0 -10px;
+    box-sizing: content-box;
 }
 
 .btn:hover {
@@ -69,7 +70,8 @@ a {
 .answers-button {
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 #highScores {
@@ -103,5 +105,18 @@ footer {
     }
     #highScoreList {
         width: 100%;
+    }
+    .btn {
+        box-sizing: content-box;
+    }
+    .answers-button {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .answers-button {
+        box-sizing: content-box;
     }
 }

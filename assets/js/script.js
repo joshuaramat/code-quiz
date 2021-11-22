@@ -2,7 +2,7 @@ const questions = [{
     question: "A very useful tool used during development and debugging for printing content to the debugger is:",
     choices: [
         "JavaScript",
-        "terminal/bash",
+        "terminal/ bash",
         "for loops",
         "console.log"
     ],

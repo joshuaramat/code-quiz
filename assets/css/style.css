@@ -25,6 +25,18 @@ a {
     font-size: 1.5rem;
 }
 
+#highScoreList {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    background-color: #FFCD91;
+    color: #1c2e4a;
+    font-size: large;
+}
+
 .text-decoration-none {
     text-decoration: none;
     color: #FFCD91;

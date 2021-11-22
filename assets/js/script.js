@@ -49,11 +49,7 @@ const questions = [{
     answer: "alerts"
 }
 ];
-// setAttribute
-// removeAttribute
-// hide things with hide class (after one question has been answered hide it)
-// document.createElement to
-// loop through the choices array and create a button for each choice
+
 var generateBtn = document.querySelector("#btn-start")
 var mainView = document.querySelector("main");
 var timerEl = document.querySelector("#timer");
@@ -88,6 +84,7 @@ function createQuestion(questionID) {
     thirdDiv.innerHTML = "<h2 class= 'title'</h2>" + "Question " + (questionID + 1) + ": " + "<br /><br />" + questions[questionID].question;
 
     fourthDiv.className = "answers-button d-flex flex-column align-items-center";
+
     for (ans in questions[questionID].choices) {
         let buttonEl = document.createElement("button");
         let temp = ans;
@@ -97,6 +94,7 @@ function createQuestion(questionID) {
         buttonEl.setAttribute("onclick", "checkAnswer(" + questionID + ",'" + questions[questionID].choices[ans] + "')");
         fourthDiv.appendChild(buttonEl);
     }
+
     thirdDiv.appendChild(fourthDiv);
     secondDiv.appendChild(thirdDiv);
     firstDiv.appendChild(secondDiv);
@@ -131,6 +129,7 @@ function checkAnswer(questionID, Answer) {
         console.log("Wrong");
         timeLeft -= 10;
     }
+
     qID++;
     if (questions[qID] === undefined) {
         gameOver();

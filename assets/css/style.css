@@ -1,5 +1,16 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #1c2e4a;
+    --secondary: #FFCD91;
+    --tertiary: white;
+}
+
 .btn {
-    color: white;
+    color: var(--tertiary);
     font-weight: bolder;
 }
 
@@ -13,25 +24,33 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #1c2e4a;
-    color: white;
-}
-
-h2 {
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);
+    color: var(--tertiary);
 }
 
 a {
     font-size: 1.5rem;
 }
 
+#highScoreList {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: large;
+}
+
 .text-decoration-none {
     text-decoration: none;
-    color: #FFCD91;
+    color: var(--secondary);
 }
 
 .btn {
-    background-color: #FFCD91;
+    background-color: var(--secondary);
     transition: all .5s ease-out;
     background-size: 1px 100px;
     background-position: 0 -10px;
@@ -39,7 +58,7 @@ a {
 
 .btn:hover {
     background-position: 1px -50px;
-    color: #1c2e4a;
+    color: var(--primary);
 }
 
 #wrong-answer {
@@ -54,7 +73,7 @@ a {
 }
 
 #highScores {
-    color: white;
+    color: var(--tertiary);
     font-size: large;
     display: flex;
     flex-direction: column;
